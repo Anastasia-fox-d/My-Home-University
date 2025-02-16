@@ -3,69 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
   <!-- Заголовок -->
   <title>{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
 
-  <!-- Описание и автор -->
-  <meta name="description" content="{{ site.description | default: site.github.project_tagline }}">
-  <meta name="author" content="{{ site.author.name }}">
+  <!-- Основные стили -->
+  <link rel="stylesheet" href="/assets/css/style.css">
 
-  <!-- Подключение CSS -->
+  <!-- Подключение CSS для шкалы прогресса -->
   <link rel="stylesheet" href="/assets/css/progress.css">
-  <link rel="stylesheet" href="/assets/css/progress.css"> <!-- Стили для шкалы прогресса -->
-  <link rel="stylesheet" href="/assets/css/style.css"> <!-- Основные стили сайта (если есть) -->
-
-  <!-- Иконка сайта -->
-  <link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon">
-
-  <!-- Open Graph мета-теги для социальных сетей -->
-  <meta property="og:title" content="{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}">
-  <meta property="og:description" content="{{ site.description | default: site.github.project_tagline }}">
-  <meta property="og:image" content="{{ site.url }}/assets/images/preview.png"> <!-- Путь к превью-изображению -->
-  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
-  <meta property="og:type" content="website">
-
-  <!-- Twitter карточки -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}">
-  <meta name="twitter:description" content="{{ site.description | default: site.github.project_tagline }}">
-  <meta name="twitter:image" content="{{ site.url }}/assets/images/preview.png"> <!-- Путь к превью-изображению -->
-
 </head>
 <body>
-
-  <!-- Шапка сайта -->
-  <header>
-    <div class="site-header">
-      <h1><a href="{{ site.url }}">{{ site.title }}</a></h1>
-      <p>{{ site.description }}</p>
-      <nav>
-        <ul>
-          <li><a href="{{ site.url }}/">Главная</a></li>
-          <li><a href="{{ site.url }}/mathematics">Математика</a></li>
-          <li><a href="{{ site.url }}/programming">Программирование</a></li>
-          <li><a href="{{ site.url }}/languages">Языки</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <!-- Основное содержимое -->
-  <main>
-    <div class="content">
-      {{ content }}
-    </div>
-  </main>
+  <!-- Контент страницы -->
+  <main>{{ content }}</main>
 
   <!-- Подвал -->
-  <footer>
-    <div class="site-footer">
-      <p>&copy; {{ 'now' | date: "%Y" }} {{ site.author.name }}. Все права защищены.</p>
-    </div>
-  </footer>
+  <footer>...</footer>
 
   <!-- Подключение JavaScript -->
-  <script src="/assets/js/progress.js"></script>
+  <script src="/assets/js/main.js"></script> <!-- Если есть основной скрипт -->
+  <script src="/assets/js/progress.js"></script> <!-- Скрипт для шкалы прогресса -->
 </body>
+</html>
