@@ -8,7 +8,6 @@ function updateProgress(id, percent) {
     }
   }
 }
-
 setTimeout(() => updateProgress('math-progress', 80), 2000);
 setTimeout(() => updateProgress('python-progress', 95), 3000);
 setTimeout(() => updateProgress('english-progress', 65), 4000);
