@@ -22,3 +22,19 @@ title: Домашний университет
 
 1. Перейдите в нужный раздел из меню выше.
 2. Исследуйте материалы и скачивайте необходимые файлы.
+<!-- Блок прогресса -->
+<div class="progress-container">
+  <h3>Математика</h3>
+  <div class="progress-bar">
+    <div id="math-progress" class="progress-fill" style="width: 70%;"></div>
+  </div>
+  <div class="progress-label">70%</div>
+</div>
+
+<div class="progress-container">
+  <h3>Python</h3>
+  <div class="progress-bar">
+    <div id="python-progress" class="progress-fill" style="width: 90%;"></div>
+  </div>
+  <div class="progress-label">90%</div>
+</div>
